@@ -13,7 +13,7 @@ export default async function Home() {
       }
     }
   );
-  const response = await fetch('http://localhost:3000/likes', {cache: 'no-cache', next: {
+  const response = await fetch('https://learning-nextjs13.vercel.app/likes', {cache: 'no-cache', next: {
     tags: ['likes']
   }})
   const {likes} = await response.json()

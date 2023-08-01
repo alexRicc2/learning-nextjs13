@@ -3,7 +3,7 @@
 import {revalidateTag} from 'next/cache';
 
 export const adjustLikes = async (amount: number) => {
-  await fetch ('http://localhost:3000/likes', {
+  await fetch ('https://learning-nextjs13.vercel.app/likes', {
     method: 'POST',
     cache: 'no-cache',
     body: JSON.stringify({
